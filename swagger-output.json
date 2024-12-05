@@ -5,7 +5,7 @@
     "description": "Calendar API",
     "version": "1.0.0"
   },
-  "host": "event-planner-nkma.onrender.com",
+  "host": "oauth-through-swagger-doc.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -14,7 +14,7 @@
     "GoogleOAuth2": {
       "type": "oauth2",
       "flow": "implicit",
-      "authorizationUrl": "https://event-planner-nkma.onrender.com/auth/google",
+      "authorizationUrl": "https://oauth-through-swagger-doc.onrender.com/auth/google",
       "description": "Use Google OAuth2 to authenticate <b>Exchange the hidden GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET for JWT_Token.</b>"
     }
   },
