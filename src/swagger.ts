@@ -18,7 +18,7 @@ const doc = {
   },
   host: isProduction
   ? 'oauth-through-swagger-doc.onrender.com'
-  : 'localhost:3000',
+  : 'localhost:8080',
   basePath: '/',
   schemes: isProduction ? ['https'] : ['http'],
   securityDefinitions: {
@@ -28,7 +28,7 @@ const doc = {
       authorizationUrl: isProduction
       // missing /auth/google was the difference between it working and not working
       ? 'https://oauth-through-swagger-doc.onrender.com/auth/google'
-      : 'http://localhost:3000/auth/google',
+      : 'http://localhost:8080/auth/google',
       description: 'Use Google OAuth2 to authenticate <b>Exchange the hidden GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET for JWT_Token.</b>',
       // client_id: process.env.GOOGLE_CLIENT_ID, // Inject client_id dynamically
     },

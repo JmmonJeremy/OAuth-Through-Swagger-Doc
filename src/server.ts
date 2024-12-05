@@ -137,7 +137,7 @@ app.use(passport.initialize())
     });
     
     // Start the server
-    const PORT = process.env.PORT || 3000;
+    const PORT = process.env.PORT || 8080;
     if (!process.env.MONGO_URI) {
       throw new Error("MONGO_URI environment variable is not defined.");
     }
